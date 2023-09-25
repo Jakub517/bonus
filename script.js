@@ -4,7 +4,7 @@ const bonusDiv = document.getElementById("bonus");
 
 generateButton.addEventListener("click", () => {
     const code = codeInput.value;
-    var sifrovano = "U2FsdGVkX19n7v/H85napb8QPdx3nnyWFqW1zHQgfyAxYl5DHYR13wLp9sfwFGGx"
+    var sifrovano = "U2FsdGVkX1+Mgw+c1e1toVkgJe1tfv1hkR9Blo/kMpLxHCUBxBqlDqnjRq608C7j"
     var desifrovano = CryptoJS.AES.decrypt(sifrovano, code);
     try {
         var vysledek = desifrovano.toString(CryptoJS.enc.Utf8);
